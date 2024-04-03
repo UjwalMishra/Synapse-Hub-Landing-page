@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- nav bar  -->
+      <div class="navbar bg-[#00224D]">
+        <div
+          class="max-w-[1200px] flex flex-row mx-auto text-white justify-between items-center h-[72px]"
+        >
+          <h2 class="font-[700] text-[20px] pr-16">
+            <span class="text-[#3DA98C]">SYNAPSE</span>
+            <span class="text-[#fff] pl-2">HUB</span>
+          </h2>
+
+          <!-- edit-profile -->
+
+          <ul class="flex flex-row gap-x-12 font-[600]">
+            <li class="cursor-pointer hover:underline">
+              <a href="" class="edit-profile">Edit Profile</a>
+            </li>
+
+            <li class="cursor-pointer hover:underline">
+              <a href="#help">Help?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- cards  -->
+      <div class="w-full grid grid-cols-2 place-items-center mt-12">
+        <!-- card-1  -->
+        <div class="w-[300px] rounded-md border mt-8">
+          <!-- img-div  -->
+          <div class="flex justify-center items-center">
+            <img
+              src="./mentor-1.jpg"
+              alt="Mentor image"
+              class="mentor-img h-[200px] w-[80%] rounded-t-md object-cover"
+            />
+          </div>
+
+          <!-- description div  -->
+          <div class="p-4">
+            <h2 class="text-sm font-semibold tracking-widest text-gray-500">
+              Mentor
+            </h2>
+            <!-- mentor-name  -->
+            <h1
+              class="mentor-name inline-flex items-center text-lg font-semibold"
+            >
+              {Name}
+            </h1>
+            <!-- mentor-info  -->
+            <p class="mentor-description mt-3 text-sm text-gray-600">
+              {Description}
+            </p>
+            <div class="mt-4">
+              <!-- mentor-expertise  -->
+              <span
+                class="mentor-expertise mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900"
+              >
+                {Expertise}
+              </span>
+              <!-- mentor-experience  -->
+              <span
+                class="mentor-experience mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900"
+              >
+                {Experience}
+              </span>
+              <!-- company in which mentor works  -->
+              <span
+                class="mentor-company mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900"
+              >
+                {Company}
+              </span>
+            </div>
+            <!-- contact-button  -->
+            <button
+              type="button"
+              class="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer  -->
+      <section id="help" class="w-full relative bg-[#23272A]">
+        <h3 class="text-[#404EED] text-center pt-12 text-[1.5rem]">
+          Connect with DEVELOPERS
+        </h3>
+
+        <div class="max-w-[1200px] mx-auto py-16">
+          <div
+            class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-items-center"
+          >
+            <!-- col-1  -->
+            <div>
+              <h3 class="text-[#404EED] mb-5">Gmail</h3>
+              <ul class="text-white space-y-2 cursor-pointer">
+                <li class="hover:underline">ujwalcse01@gmail.com</li>
+                <li class="hover:underline">priyachalasani1@gmail.com</li>
+                <li class="hover:underline">Surapaneni.rk03@gmail.com</li>
+                <li class="hover:underline">alfaizshaikh0306@gmail.com</li>
+              </ul>
+            </div>
+            <!-- col-2  -->
+            <div>
+              <h3 class="text-[#404EED] mb-5">LinkedIn</h3>
+              <ul class="text-white space-y-2 cursor-pointer">
+                <li class="hover:underline">
+                  <a href="https://www.linkedin.com/in/ujwal-mishra-9964572a7/"
+                    >Ujwal Mishra
+                  </a>
+                </li>
+                <li class="hover:underline">
+                  <a href="https://www.linkedin.com/in/haripriya01"
+                    >Hari Priya Chalasani</a
+                  >
+                </li>
+                <li class="hover:underline">
+                  <a
+                    href="https://www.linkedin.com/in/rohith-kumar-surapaneni-519238239/"
+                    >Rohith Kumar Surapaneni</a
+                  >
+                </li>
+                <li class="hover:underline">
+                  <a href="https://in.linkedin.com/in/alfaiz-shaikh-88504827b"
+                    >Alfaiz Shaikh</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="h-[2px] w-[100%] bg-[#404EED] mt-8"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
